@@ -1,0 +1,326 @@
+/* Ensure box-sizing and font-family are applied globally */
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+/* Styles for the header and top navigation menu */
+.menu .topnav {
+  overflow: hidden;
+  background-color: rgb(31, 49, 111);
+  background-attachment: fixed;
+
+}
+
+.menu .topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.menu .topnav a:hover {
+  background-color: rgb(249, 219, 186);
+  color: black;
+}
+
+.menu .topnav a.active {
+  background-color: rgb(26, 72, 112);
+  color: white;
+}
+
+.menu .topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .menu .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu .topnav.responsive {
+    position: relative;
+  }
+
+  .menu .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .menu .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.logo img {
+  width: 10%;
+}
+
+/* Styles for the slideshow container */
+.slider .slideshow-container {
+  max-width: 1365px;
+  position: relative;
+  margin: auto;
+  margin-top:5%;
+  padding:0;
+  border-style: groove;
+  border-radius:5px;
+  border-top: #ddd;
+}
+
+/* Styles for the slideshow images */
+.slider .mySlides {
+  display: none;
+  position: relative;
+}
+
+/* Add border to images */
+.slider img {
+  width: 100%;
+  height: 450px;
+  /* Set height for all images */
+  object-fit: cover;
+  /* Ensure images cover the container area */
+  border: 2px solid #ddd;
+  /* Border style */
+}
+
+/* Caption text styling */
+.slider .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (e.g., "1/6") styling */
+.slider .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Dot indicators styling */
+.slider .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.slider .active {
+  background-color: #717171;
+}
+
+/* Fade animation for slides */
+.slider .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  /* Slow down the transition */
+  animation-name: fade;
+  animation-duration: 3s;
+  /* Slow down the transition */
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Smaller screens: adjust text size */
+@media only screen and (max-width: 300px) {
+  .slider .text {
+    font-size: 11px;
+  }
+}
+
+.imagecollege img {
+  width: 100%;
+ 
+
+}
+
+
+.center-heading {
+  text-align: center;
+  justify-content: center;
+
+
+}
+
+.center-headings {
+  text-align: center;
+  justify-content: center;
+  font-size: 20px;
+
+}
+
+.tag {
+  height: 45px;
+  width: 100%;
+  background-color: rgb(31, 49, 111);
+}
+
+.tag h3 {
+  text-align: center;
+  justify-content: center;
+  color: #f2f2f2;
+}
+
+.maincontent {
+  justify-content: center;
+  display: flex;
+
+}
+
+.maincontent .course {
+  margin-top: 25px;
+  width: auto;
+  border-collapse: collapse;
+  width: 100%;
+ 
+}
+.maincontent .course tr td a{
+  text-decoration: none;
+}
+
+.maincontent .course td,
+th {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+  
+}.contact h3 {
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(26, 72, 112);
+  text-align: left;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.contact .form {
+  height: auto;
+  width: 90%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  border: 2px solid gray;
+  background: linear-gradient(45deg, rgb(26, 72, 111), rgb(150, 181, 208), rgb(26, 72, 115));
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact .form input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+  border-radius: 8px;
+  border-style: groove;
+  box-sizing: border-box;
+  background-color: rgb(243, 243, 243);
+  border-color: #e0e6e5;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .contact .form {
+      width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact .form {
+      width: 30%;
+  }
+}
+
+
+footer .footer{
+  margin-top:35px;
+  height: 50%;
+  width: 100%;
+  background-color:rgb(31, 49, 111);
+}
+.footer {
+  margin-top: 20px;
+  background-color:rgb(31, 49, 111);
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ddd;
+}
+
+.footer .social-icons i {
+  margin: 0 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer .social-icons i:hover {
+  color: #ddd;
+}
+
+.footer .copyright {
+  margin-bottom: 0%;
+  padding: 10px;
+  text-align: center;
+}
+.footer .copyright p{
+  display:inline;
+  padding-inline: 8%;
+  
+}
